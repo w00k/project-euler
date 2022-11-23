@@ -6,17 +6,12 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 pub fn problem001() {
 
-    let mut number_vector: Vec<i32> = Vec::new();
     let mut sum: i32 = 0;
 
     for index in 1..1000 {
         if is_multiple(index, 3) || is_multiple(index, 5) {
-            number_vector.push(index); 
+            sum += index;
         }
-    }
-
-    for number in number_vector {
-        sum += number;
     }
     
     println!("The sum of all number equals to {}", sum);
