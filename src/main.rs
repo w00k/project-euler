@@ -1,8 +1,8 @@
 mod solutions;
-use solutions::problem_001;
+use solutions::problem_003;
 
 fn main() {
     println!("Start");
-    problem_001::problem001();
+    problem_003::problem003();
     println!("End");
 }
